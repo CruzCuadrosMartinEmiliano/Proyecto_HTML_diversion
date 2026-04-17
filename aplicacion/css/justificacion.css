@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+body{
+background-color:#F2F4F7 ;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #1E3A5F;
+}
+
+nav{
+
+        display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding:  10px;
+    background-color: #1E3A5F;
+}
+.Logo img{
+    width: 120px;
+    border-radius: 35%;
+
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    gap:130px ;
+    margin: 0 auto;
+
+}
+.contenido a{
+    font-size:20px;
+    text-decoration:none;
+    color:#e0e0e0;
+    font-weight:600 ;
+    border-bottom: 2px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.contenido a:hover{
+    border-bottom:2px solid rgb(255, 255, 255);
+}
+
+.informacion-principal{
+    text-align: center;
+    padding: 60px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+main {
+    flex: 1; 
+}
+footer{
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1E3A5F;
+    color: #e0e0e0;
+    
+}
+.audiovro{
+    text-align: center;
+    padding: 110px 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.audiovro img{
+    padding: 20px 0px;
+    width: 130px;
+}
+.apartado{
+    background-color: #1E3A5F;
+    color: #e0e0e0;
+    border-radius: 15px;
+}

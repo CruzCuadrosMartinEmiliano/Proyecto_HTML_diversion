@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+body{
+background-color:#F2F4F7 ;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #1E3A5F;
+}
+
+nav{
+
+        display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding:  10px;
+    background-color: #1E3A5F;
+}
+.Logo img{
+    width: 120px;
+    border-radius: 35%;
+
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    gap:130px ;
+    margin: 0 auto;
+
+}
+.contenido a{
+    font-size:20px;
+    text-decoration:none;
+    color:#e0e0e0;
+    font-weight:600 ;
+    border-bottom: 2px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.contenido a:hover{
+    border-bottom:2px solid rgb(255, 255, 255);
+}
+
+.informacion-principal{
+    text-align: center;
+    padding: 60px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.contenedor-tabla {
+    max-width: 1000px;
+    margin: auto;
+    padding:30px 60px ;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+/* Encabezado de la tabla (Verde fuerte) */
+thead th {
+    background-color: #8bc34a; /* Verde lima de la imagen */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+}
+
+/* Filas de la tabla */
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    vertical-align: top;
+}
+
+/* Color de fondo alternado (opcional, para lectura fácil) */
+tbody tr:nth-child(odd) {
+    background-color: #f9fdf4;
+}
+
+/* Estilo para la primera columna (Perfil) */
+tbody td:first-child {
+    font-weight: 500;
+}
+
+/* Efecto al pasar el mouse */
+tbody tr:hover {
+    background-color: #f1f8e9;
+}
+main {
+    flex: 1; 
+}
+
+footer{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1E3A5F;
+    color: #e0e0e0;
+    
+}

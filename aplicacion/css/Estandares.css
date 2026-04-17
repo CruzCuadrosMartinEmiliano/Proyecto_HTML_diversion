@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+body{
+background-color:#F2F4F7 ;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #1E3A5F;
+}
+
+nav{
+
+        display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding:  10px;
+    background-color: #1E3A5F;
+}
+.Logo img{
+    width: 120px;
+    border-radius: 35%;
+
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    gap:130px ;
+    margin: 0 auto;
+
+}
+.contenido a{
+    font-size:20px;
+    text-decoration:none;
+    color:#e0e0e0;
+    font-weight:600 ;
+    border-bottom: 2px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.contenido a:hover{
+    border-bottom:2px solid rgb(255, 255, 255);
+}
+
+.informacion-principal{
+    text-align: center;
+    padding: 60px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.gantt-wrapper {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.gantt-container {
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezados */
+.gantt-header {
+    display: flex;
+    background: #f9f9f9;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+}
+
+.col-info {
+    width: 250px;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.col-timeline {
+    flex-grow: 1;
+    display: flex;
+}
+
+.month {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    border-right: 1px solid #eee;
+}
+
+/* Fases (Naranja) */
+.fase-header {
+    background: #ff8c00;
+    color: white;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Tareas */
+.tarea {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    height: 35px;
+    align-items: center;
+}
+
+.tarea-nombre {
+    width: 250px;
+    font-size: 12px;
+    padding-left: 15px;
+    color: #555;
+    border-right: 1px solid #eee;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tarea-barra-container {
+    flex-grow: 1;
+    position: relative;
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px);
+    background-size: 20px 100%; /* Simula la cuadrícula de días */
+}
+
+/* Barras de Colores (Posicionamiento manual para efecto cascada) */
+.barra {
+    height: 18px;
+    border-radius: 3px;
+    position: absolute;
+}
+
+/* Ajusta el "left" y el "width" para cambiar la duración y fecha */
+.b1 { width: 50px; left: 10px; background: #82954b; }
+.b2 { width: 60px; left: 60px; background: #ef9f33; }
+.b3 { width: 45px; left: 120px; background: #7ba893; }
+
+.b4 { width: 70px; left: 180px; background: #607d8b; }
+.b5 { width: 65px; left: 250px; background: #d35d6e; }
+.b6 { width: 80px; left: 320px; background: #ff9800; }
+
+.b7 { width: 55px; left: 410px; background: #f48fb1; }
+.b8 { width: 90px; left: 470px; background: #673ab7; }
+.b9 { width: 100px; left: 560px; background: #f44336; }
+main {
+    flex: 1; 
+}
+footer{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1E3A5F;
+    color: #e0e0e0;
+    
+}

@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+body{
+background-color:#F2F4F7 ;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #1E3A5F;
+}
+
+nav{
+
+        display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding:  10px;
+    background-color: #1E3A5F;
+}
+.Logo img{
+    width: 120px;
+    border-radius: 35%;
+
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    gap:130px ;
+    margin: 0 auto;
+
+}
+.contenido a{
+    font-size:20px;
+    text-decoration:none;
+    color:#e0e0e0;
+    font-weight:600 ;
+    border-bottom: 2px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.contenido a:hover{
+    border-bottom:2px solid rgb(255, 255, 255);
+}
+
+.informacion-principal{
+    text-align: center;
+    padding: 60px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.contenedor-tabla {
+    padding:20px ;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: white;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    border: 1px solid #4a7c44;
+}
+
+/* Títulos de las Fases (Verde fuerte) */
+.titulo-fase {
+    background-color: #76bc71;
+    color: #000;
+    font-size: 1.1em;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #4a7c44;
+}
+
+/* Encabezados de columnas (Verde claro) */
+.encabezado-columnas th {
+    background-color: #d8e6d1;
+    color: #000;
+    font-weight: 600;
+    padding: 10px;
+    border: 1px solid #4a7c44;
+}
+
+/* Celdas generales */
+td {
+    padding: 10px;
+    border: 1px solid #4a7c44;
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+/* Estilo específico para la columna de Actividades */
+.col-actividad {
+    background-color: #d8e6d1;
+    font-weight: bold;
+    width: 18%;
+}
+
+/* Estilo para las tareas para que resalten un poco más */
+td:nth-child(2) {
+    background-color: #ffffff;
+    width: 20%;
+}
+
+/* Efecto Hover para facilitar la lectura */
+tr:hover {
+    background-color: #f1f8ee;
+}
+main {
+    flex: 1; 
+}
+footer{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1E3A5F;
+    color: #e0e0e0;
+    
+}
